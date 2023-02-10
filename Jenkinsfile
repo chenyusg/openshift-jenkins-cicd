@@ -12,7 +12,6 @@ pipeline
                   def pom = readMavenPom file: 'pom.xml'
                   version = pom.version
               }
-              sh "mvn install"
             }
           }
           stage('Create Image Builder') {
